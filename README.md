@@ -4,65 +4,46 @@
 
 > create a instance by giving instance name 
 
-
-
-![](BUILD SERVER/Screenshot 2025-10-07 120405.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120405.png)
 
 ----
-
-
 
 > select ubuntu image and make sure it is latest version i.e 24.04 LTS (HVM)
 
-![](BUILD SERVER/Screenshot 2025-10-07 120428.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120428.png)
 
 ----
-
-
 
 > click on edit network settings and change security group name(optional) and launch instance
 
-![](BUILD SERVER/Screenshot 2025-10-07 120507.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120507.png)
 
 ----
-
-
 
 > connect to the instance
 
-![](BUILD SERVER/Screenshot 2025-10-07 120622.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120622.png)
 
 ----
 
-
-
 > copy the SSH key and open terminal 
 
-![](BUILD SERVER/Screenshot 2025-10-07 120636.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120636.png)
 
 ---
 
-
-
 > In terminal change directory to downloads(your PEM file is present in downloads)
-
 > use the below command:
-
 > `cd downloads` and press enter
-
 > paste the SSH key and press enter now it will ask permission yes/no type yes 
 
-![](BUILD SERVER/Screenshot 2025-10-07 120714.png)
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120714.png)
 
 -----
 
-
-
 > Now you are connected to BUILD server image(ubuntu) 
 
-![](BUILD SERVER/Screenshot 2025-10-07 120731.png)
-
-
+![](BUILD%20SERVER/Screenshot%202025-10-07%20120731.png)
 
 # JAVA BUILD-MAVEN 
 
@@ -70,18 +51,17 @@
 
  >Open the GITHUB repo where JAVA code is stored in browser
 
-![](maven BUILD/Screenshot 2025-10-07 121029.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121029.png)
 
 -----
 
 >Now copy the HTTPS URL(click on code down arrow to find the URL as shown in below image)
 
-![](maven BUILD/Screenshot 2025-10-07 121049.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121049.png)
 
 -----
 
 > Now in terminal:
-
 > run `git clone <YOUR URL>` and your code is cloned(downloaded) in your BUILD server 
 >
 > use the following commands:
@@ -90,15 +70,14 @@
 >
 > `cd <folder name>` - to change directory 
 
-![](maven BUILD/Screenshot 2025-10-07 121131.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121131.png)
 
 -----
 
 > Again use `ls` to view the files/folders present in the code repo
-
 > read the POM file by using `cat pom.xml` and we get to know build tool and JAVA version developer mentioned
 
-![](maven BUILD/Screenshot 2025-10-07 121220.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121220.png)
 
 ------
 
@@ -108,7 +87,7 @@
 >
 > `sudo apt install openjdk-17-jre-headless -y` 
 
-![](maven BUILD/Screenshot 2025-10-07 121307.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121307.png)
 
 -----
 
@@ -116,7 +95,7 @@
 >
 > `sudo  apt install maven -y`
 
-![](maven BUILD/Screenshot 2025-10-07 121410.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121410.png)
 
 ------
 
@@ -124,7 +103,7 @@
 >
 > `mvn validate`
 
-![](maven BUILD/Screenshot 2025-10-07 121516.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121516.png)
 
 ----
 
@@ -132,7 +111,7 @@
 >
 > `mvn package` 
 
-![](maven BUILD/Screenshot 2025-10-07 121536.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121536.png)
 
 -----
 
@@ -140,7 +119,7 @@
 >
 > now FIX it (in real time the DEVELOPER will fix the POM file) 
 
-![](maven BUILD/Screenshot 2025-10-07 121604.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121604.png)
 
 -----
 
@@ -148,7 +127,7 @@
 >
 > Below is the updated POM file now copy the updated POM file
 
-![](maven BUILD/Screenshot 2025-10-07 121856.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121856.png)
 
 -----
 
@@ -156,31 +135,31 @@
 >
 >Open vi editor using `vi pom.xml` and by pressing I paste the updated pom file inside it use `:wq` to save it
 
-![](maven BUILD/Screenshot 2025-10-07 121929.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121929.png)
 
 --------
 
 > Use `mvn clean` to remove the previous failed build
 
-![](maven BUILD/Screenshot 2025-10-07 122020.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20122020.png)
 
 ------
 
 > Now run `mvn package` again with new updated pom.xml 
 
-![](maven BUILD/Screenshot 2025-10-07 121536.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20121536.png)
 
 ---
 
 > Build Success and code Build is completed 
 
-![](maven BUILD/Screenshot 2025-10-07 122106.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20122106.png)
 
 -----
 
 > To view the Artifact (.war) use `ls` and `cd target` ,`ls` again u can see .war file in red  
 
-![](maven BUILD/Screenshot 2025-10-07 122127.png)
+![](maven%20BUILD/Screenshot%202025-10-07%20122127.png)
 
 --------
 
@@ -190,27 +169,26 @@
 
 > create an instance by giving instance name
 
-![](deploy server/Screenshot 2025-10-07 123614.png)
+![](deploy%20server/Screenshot%202025-10-07%20123614.png)
 
 -----
 
 > select image ubuntu latest version same as BUILD server and launch the server
 
-![](deploy server/Screenshot 2025-10-07 123752.png)
+![](deploy%20server/Screenshot%202025-10-07%20123752.png)
 
 -----
 
 >  configure inbound rules
-
 > go to security and u will find inbound and outbound rules 
 
-![](deploy server/Screenshot 2025-10-07 123812.png)
+![](deploy%20server/Screenshot%202025-10-07%20123812.png)
 
 ----
 
 >  select edit inbound rules to add port number of TOMCAT WEB Server
 
-![](deploy server/Screenshot 2025-10-07 123824.png)
+![](deploy%20server/Screenshot%202025-10-07%20123824.png)
 
 ----
 
@@ -218,19 +196,19 @@
 >
 >Type: custom TCP ; Port range: 8080 ; Source: Anywhere IPV4
 
-![](deploy server/Screenshot 2025-10-07 123849.png)
+![](deploy%20server/Screenshot%202025-10-07%20123849.png)
 
 -----
 
 > After adding inbound rule click save rules and it will show successfully modified
 
-![](deploy server/Screenshot 2025-10-07 123900.png)
+![](deploy%20server/Screenshot%202025-10-07%20123900.png)
 
 -----
 
 > copy the SSH key and open Terminal
 
-![](deploy server/Screenshot 2025-10-07 123927.png)
+![](deploy%20server/Screenshot%202025-10-07%20123927.png)
 
 -----
 
@@ -238,7 +216,7 @@
 >
 > Now paste the SSH key and enter yes you will be connected to DEPLOY server
 
-![](deploy server/Screenshot 2025-10-07 124017.png)
+![](deploy%20server/Screenshot%202025-10-07%20124017.png)
 
 ----
 
@@ -248,7 +226,7 @@
 >
 > Install JAVA latest version by using `sudo apt install openjdk-17-jre-headless -y`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125258.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125258.png)
 
 ---
 
@@ -256,13 +234,13 @@
 >
 > copy the address(URL Link) of tar.gz(pgp,sha512) file
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125403.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125403.png)
 
 ----
 
 > Use `wget <tar.gz link address>` to download the folder
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125433.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125433.png)
 
 ----
 
@@ -270,7 +248,7 @@
 >
 > to extract the folder use `tar -xvf apache-tomcat-9.0.110.tar.gz` 
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125500.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125500.png)
 
 ------
 
@@ -280,7 +258,7 @@
 >
 > To see the files/folders inside extracted folder use `ls`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125533.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125533.png)
 
 ------
 
@@ -288,13 +266,13 @@
 >
 > Start TOMCAT server using `./startup.sh`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 125927.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20125927.png)
 
 ----
 
 > To check whether the web server is started or not copy the public ip of DEPLOY server 
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 130038.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20130038.png)
 
 ----
 
@@ -302,13 +280,13 @@
 >
 >Ex: 54.91.69.103:8080
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 130105.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20130105.png)
 
 ---
 
 > Your TOMCAT Web server is started and you can see in the below image
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 130119.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20130119.png)
 
 ---
 
@@ -316,7 +294,7 @@
 >
 > You have to configure the WEB server 
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 130129.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20130129.png)
 
 --------
 
@@ -328,7 +306,7 @@
 >
 > open file using `vi <file name>` here in the below image it is `vi tomcat-users.xml`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 134932.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20134932.png)
 
 -----
 
@@ -342,7 +320,7 @@
 >
 > username and password can be anything depending upon user and save it using `:wq`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135146.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135146.png)
 
 ------
 
@@ -352,13 +330,13 @@
 >
 > open editor `vi <file name>` here in below image it is `vi context.xml` 
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135243.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135243.png)
 
 -------
 
 > here remove the valve file
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135403.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135403.png)
 
 ----
 
@@ -366,7 +344,7 @@
 >
 > below image shows the configured file
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135427.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135427.png)
 
 -----
 
@@ -376,7 +354,7 @@
 >
 > `./startup.sh` start the web server
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135513.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135513.png)
 
 --------
 
@@ -386,7 +364,7 @@
 >
 > signin
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135529.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135529.png)
 
 ------
 
@@ -396,25 +374,25 @@
 >
 > so our build code file is in build server , now you have to copy that file to DEPLOY server(webserver)
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135556.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135556.png)
 
 -----
 
 > open Powershell and change directory to where your PEM file is present (downloads) use `cd downloads`
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135616.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135616.png)
 
 -------
 
 > copy path of source(BUILD server)
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 135832.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20135832.png)
 
 -----
 
 > copy path of destination(DEPLOY server)
 >
-> ![](TOMCAT DEPLOY/Screenshot 2025-10-07 140003.png)
+> ![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20140003.png)
 
 -----
 
@@ -424,7 +402,7 @@
 >
 > After this the BUILD CODE file in BUILD server is copied into webapps of the DEPLOY server
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 141223.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20141223.png)
 
 -----
 
@@ -432,19 +410,16 @@
 >
 > click on that to see output
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 141300.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20141300.png)
 
 -------
 
 > The Build code is successfully deployed 
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 141311.png)
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20141311.png)
 
 -----
 
 > Test the output
 
-![](TOMCAT DEPLOY/Screenshot 2025-10-07 141330.png)
-
-
-
+![](TOMCAT%20DEPLOY/Screenshot%202025-10-07%20141330.png)
