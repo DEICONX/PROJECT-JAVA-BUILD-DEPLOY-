@@ -51,13 +51,13 @@
 
  >Open the GITHUB repo where JAVA code is stored in browser
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121029.png)
+![](Screenshot%202025-10-07%20121029.png)
 
 -----
 
 >Now copy the HTTPS URL(click on code down arrow to find the URL as shown in below image)
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121049.png)
+![](Screenshot%202025-10-07%20121049.png)
 
 -----
 
@@ -70,14 +70,14 @@
 >
 > `cd <folder name>` - to change directory 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121131.png)
+![](Screenshot%202025-10-07%20121131.png)
 
 -----
 
 > Again use `ls` to view the files/folders present in the code repo
 > read the POM file by using `cat pom.xml` and we get to know build tool and JAVA version developer mentioned
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121220.png)
+![](Screenshot%202025-10-07%20121220.png)
 
 ------
 
@@ -87,7 +87,7 @@
 >
 > `sudo apt install openjdk-17-jre-headless -y` 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121307.png)
+![](Screenshot%202025-10-07%20121307.png)
 
 -----
 
@@ -95,7 +95,7 @@
 >
 > `sudo  apt install maven -y`
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121410.png)
+![](Screenshot%202025-10-07%20121410.png)
 
 ------
 
@@ -103,7 +103,7 @@
 >
 > `mvn validate`
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121516.png)
+![](Screenshot%202025-10-07%20121516.png)
 
 ----
 
@@ -111,7 +111,7 @@
 >
 > `mvn package` 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121536.png)
+![](Screenshot%202025-10-07%20121536.png)
 
 -----
 
@@ -119,7 +119,7 @@
 >
 > now FIX it (in real time the DEVELOPER will fix the POM file) 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121604.png)
+![](Screenshot%202025-10-07%20121604.png)
 
 -----
 
@@ -127,7 +127,7 @@
 >
 > Below is the updated POM file now copy the updated POM file
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121856.png)
+![](Screenshot%202025-10-07%20121856.png)
 
 -----
 
@@ -135,31 +135,31 @@
 >
 >Open vi editor using `vi pom.xml` and by pressing I paste the updated pom file inside it use `:wq` to save it
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121929.png)
+![](Screenshot%202025-10-07%20121929.png)
 
 --------
 
 > Use `mvn clean` to remove the previous failed build
 
-![](maven%20BUILD/Screenshot%202025-10-07%20122020.png)
+![](Screenshot%202025-10-07%20122020.png)
 
 ------
 
 > Now run `mvn package` again with new updated pom.xml 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20121536.png)
+![](Screenshot%202025-10-07%20121536.png)
 
 ---
 
 > Build Success and code Build is completed 
 
-![](maven%20BUILD/Screenshot%202025-10-07%20122106.png)
+![](Screenshot%202025-10-07%20122106.png)
 
 -----
 
 > To view the Artifact (.war) use `ls` and `cd target` ,`ls` again u can see .war file in red  
 
-![](maven%20BUILD/Screenshot%202025-10-07%20122127.png)
+![](Screenshot%202025-10-07%20122127.png)
 
 --------
 
